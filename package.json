@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Run the tests within the directories!\" && exit 1",
+    "build:client": "cd frontend && react-scripts build",
+    "build:server": "cd backend && node build.js",
+    "client": "cd frontend && npx react-scripts start",
+    "server": "cd backend && nodemon --config nodemon.json",
+    "server:prod": "cd backend && node -r module-alias/register ./dist"
   },
   "repository": {
     "type": "git",
