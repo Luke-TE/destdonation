@@ -1,0 +1,35 @@
+{
+  "name": "destdonation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:client": "cd frontend && react-scripts build",
+    "build:server": "cd backend && node build.js",
+    "client": "cd frontend && npx react-scripts start",
+    "server": "cd backend && nodemon --config nodemon.json",
+    "server:prod": "cd backend && node -r module-alias/register ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.doc.ic.ac.uk:g1927119/drp_19.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.6",
+    "prettier": "2.0.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md,jsx,ts,tsx}": "prettier --write"
+  },
+  "dependencies": {},
+  "description": ""
+}
