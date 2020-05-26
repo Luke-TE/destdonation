@@ -7,8 +7,6 @@
     "quotemark": [true, "single"]
   },
   "linterOptions": {
-    "exclude": [
-      "./node_modules/**"
-    ]
+    "exclude": ["./node_modules/**"]
   }
 }
