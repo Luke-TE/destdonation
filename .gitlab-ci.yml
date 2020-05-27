@@ -19,4 +19,4 @@ testing backend:
 deploying to heroku:
   stage: deploy
   script:
-    - dpl --provider=heroku --app=destdonation --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=shielded-savannah-74147 --api-key=$HEROKU_API_KEY
