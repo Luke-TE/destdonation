@@ -1,0 +1,12 @@
+stages:
+  - test
+  - deploy
+
+testing:
+  stage: test
+  script:
+    - cd frontend
+    - npm test
+    - cd ..
+
+deploying:
