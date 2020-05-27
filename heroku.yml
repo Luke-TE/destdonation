@@ -1,0 +1,5 @@
+build:
+  docker:
+          web: Dockerfile
+run:
+  web: docker run -dit -p 80:80 drp-frontend && docker run -dit -p 3001:3001 drp-backend
