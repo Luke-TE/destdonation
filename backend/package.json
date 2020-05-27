@@ -6,7 +6,8 @@
     "lint": "tslint --project \"tsconfig.json\"",
     "start": "node -r module-alias/register ./dist",
     "start:dev": "nodemon --config nodemon.json",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "test:CI": "CI=true jest"
   },
   "_moduleAliases": {
     "@daos": "dist/daos",
