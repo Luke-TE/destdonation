@@ -19,7 +19,5 @@ testing backend:
 deploying to heroku:
   stage: deploy
   script:
-    - apt-get update -yq
-    - apt-get install -y ruby-dev
     - gem install dpl
     - dpl --provider=heroku --app=destdonation --api-key=$heroku_api_key
