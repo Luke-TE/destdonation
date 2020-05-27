@@ -1,5 +1,5 @@
 build:
   docker:
-          web: Dockerfile
+    web: frontend/Dockerfile
 run:
-  web: docker run -dit -p 80:80 drp-frontend && docker run -dit -p 3001:3001 drp-backend
+  web: npx serve -s build
