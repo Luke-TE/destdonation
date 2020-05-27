@@ -2,8 +2,9 @@ FROM node:12.16.3
 
 COPY . /
 
-ENV PORT 8080
+ENV PORT 80
 EXPOSE $PORT
 
 RUN npm ci 
-CMD [ "npm", "start" ]   
+RUN npm run build
+CMD [ "npx", "serve", "-s", "build" ]
