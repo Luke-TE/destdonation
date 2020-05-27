@@ -19,4 +19,4 @@ testing backend:
 deploying to heroku:
   stage: deploy
   script:
-    - dpl --provider=heroku --app=destdonation --api-key=$heroku_api_key
+    - dpl --provider=heroku --app=destdonation --api-key=$HEROKU_API_KEY
