@@ -1,6 +1,5 @@
 stages:
   - test
-  - deploy
 
 testing:
   stage: test
@@ -8,5 +7,3 @@ testing:
     - cd frontend
     - npm test
     - cd ..
-
-deploying:
