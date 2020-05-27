@@ -5,6 +5,6 @@ testing:
   stage: test
   script:
     - cd frontend
-    - npm install
+    - npm ci
     - npm test
     - cd ..
