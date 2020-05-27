@@ -1,6 +1,6 @@
 FROM node:12.16.3
 
-COPY . /
+COPY frontend/ /
 
 ENV PORT 80
 EXPOSE $PORT

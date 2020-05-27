@@ -1,5 +1,5 @@
 build:
   docker:
-    web: frontend/Dockerfile
+    web: Dockerfile
 run:
   web: npx serve -s build
