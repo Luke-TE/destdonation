@@ -6,8 +6,12 @@
     "lint": "tslint --project \"tsconfig.json\"",
     "start": "node -r module-alias/register ./dist",
     "start:dev": "nodemon --config nodemon.json",
+<<<<<<< HEAD
     "test": "jest --watch",
     "test:CI": "CI=true jest"
+=======
+    "test": "CI=true jest"
+>>>>>>> [ljt18] Added basic test to backend
   },
   "_moduleAliases": {
     "@daos": "dist/daos",
@@ -38,6 +42,7 @@
     "@types/jasmine": "^3.5.10",
     "@types/jest": "^25.2.3",
     "@types/jsonfile": "^6.0.0",
+    "@types/mocha": "^7.0.2",
     "@types/morgan": "^1.9.0",
     "@types/node": "^14.0.5",
     "@types/supertest": "^2.0.9",
