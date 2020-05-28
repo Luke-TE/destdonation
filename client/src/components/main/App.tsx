@@ -12,6 +12,8 @@ import Analytics from "../Analytics/Analytics.tsx";
 import CurrentDonation from "../CurrentDonation/CurrentDonation.tsx";
 // @ts-ignore
 import Error from "../Error/Error.tsx";
+// @ts-ignore
+import Header from "../Navigation/Header.tsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -20,6 +22,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
+          <Header></Header>
           <Navigation />
           <Switch>
             <Route path="/" component={Home} exact />
