@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Footer.css";
 import Facebook from "./facebook.svg";
 import Insta from "./instagram.svg";
@@ -17,9 +17,18 @@ const Footer = () => {
           >
             www.cityharvest.org.uk &nbsp;
           </a>
-          <img src={Facebook} width={20}></img> &nbsp;
-          <img src={Insta} width={20}></img> &nbsp;
-          <img src={Twitter} width={20}></img> &nbsp; &copy;
+          <a href={"https://www.facebook.com/CityHarvestLondon/"}>
+            <img src={Facebook} width={20} alt={""}></img>
+          </a>{" "}
+          &nbsp;
+          <a href={"https://www.instagram.com/cityharvestlondon/?hl=en"}>
+            <img src={Insta} width={20} alt={""}></img>
+          </a>{" "}
+          &nbsp;
+          <a href={"https://twitter.com/cityharvest_ldn?lang=en"}>
+            <img src={Twitter} width={20} alt={""}></img>
+          </a>{" "}
+          &nbsp; &copy;
           {new Date().getFullYear()} DestDonation
         </div>
       </div>
