@@ -7,6 +7,8 @@ import cors from "cors";
 import express, { Request, Response, NextFunction } from "express";
 import { BAD_REQUEST } from "http-status-codes";
 import "express-async-errors";
+import { postgraphile } from "postgraphile";
+import { NodePlugin } from "graphile-build";
 
 import BaseRouter from "./routes";
 import logger from "@shared/Logger";
@@ -35,6 +37,16 @@ if (process.env.NODE_ENV === "production") {
 
 // Add APIs
 app.use("/api", BaseRouter);
+
+// GraphQL API
+app.use(
+  postgraphile(process.env.CONNECTION_STRING || "", "public", {
+    watchPg: true,
+    graphiql: true,
+    enhanceGraphiql: true,
+    skipPlugins: [NodePlugin],
+  })
+);
 
 // Print API errors
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
