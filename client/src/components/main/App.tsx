@@ -14,6 +14,8 @@ import CurrentDonation from "../CurrentDonation/CurrentDonation.tsx";
 import Error from "../Error/Error.tsx";
 // @ts-ignore
 import Header from "../Navigation/Header.tsx";
+// @ts-ignore
+import Footer from "../Footer/Footer.tsx";
 
 import "typeface-roboto";
 
@@ -22,18 +24,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div>
-          <Header></Header>
-          <Navigation />
-          <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/Current-Donation" component={CurrentDonation} />
-            <Route path="/Analytics" component={Analytics} />
-            <Route component={Error} />
-          </Switch>
+      <div className="page-container">
+        <div className="content-wrap">
+          <BrowserRouter>
+            <div>
+              <Header></Header>
+              <Navigation />
+              <Switch>
+                <Route path="/" component={Home} exact />
+                <Route path="/Current-Donation" component={CurrentDonation} />
+                <Route path="/Analytics" component={Analytics} />
+                <Route component={Error} />
+              </Switch>
+            </div>
+          </BrowserRouter>
         </div>
-      </BrowserRouter>
+        <Footer></Footer>
+      </div>
     );
   }
 }
