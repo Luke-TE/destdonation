@@ -29,7 +29,7 @@ initialize {
           "children": Array [
             Object {
               "attribs": Object {
-                "src": "van.png",
+                "src": "test-file-stub",
               },
               "children": Array [],
               "name": "img",
@@ -179,7 +179,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "src": "van.png",
+                  "src": "test-file-stub",
                 },
                 "children": Array [],
                 "name": "img",
@@ -213,7 +213,7 @@ initialize {
             "children": Array [
               Object {
                 "attribs": Object {
-                  "src": "vanRev.png",
+                  "src": "test-file-stub",
                 },
                 "children": Array [],
                 "name": "img",
@@ -363,7 +363,7 @@ initialize {
                 "parent": [Circular],
                 "prev": Object {
                   "attribs": Object {
-                    "src": "vanRev.png",
+                    "src": "test-file-stub",
                   },
                   "children": Array [],
                   "name": "img",
@@ -428,7 +428,7 @@ initialize {
         "children": Array [
           Object {
             "attribs": Object {
-              "src": "van.png",
+              "src": "test-file-stub",
             },
             "children": Array [],
             "name": "img",
@@ -578,7 +578,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "src": "van.png",
+                "src": "test-file-stub",
               },
               "children": Array [],
               "name": "img",
@@ -612,7 +612,7 @@ initialize {
           "children": Array [
             Object {
               "attribs": Object {
-                "src": "vanRev.png",
+                "src": "test-file-stub",
               },
               "children": Array [],
               "name": "img",
@@ -762,7 +762,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "src": "vanRev.png",
+                  "src": "test-file-stub",
                 },
                 "children": Array [],
                 "name": "img",
@@ -842,7 +842,7 @@ initialize {
         "children": Array [
           Object {
             "attribs": Object {
-              "src": "vanRev.png",
+              "src": "test-file-stub",
             },
             "children": Array [],
             "name": "img",
@@ -992,7 +992,7 @@ initialize {
             "parent": [Circular],
             "prev": Object {
               "attribs": Object {
-                "src": "vanRev.png",
+                "src": "test-file-stub",
               },
               "children": Array [],
               "name": "img",
@@ -1028,7 +1028,7 @@ initialize {
           "children": Array [
             Object {
               "attribs": Object {
-                "src": "van.png",
+                "src": "test-file-stub",
               },
               "children": Array [],
               "name": "img",
@@ -1178,7 +1178,7 @@ initialize {
               "parent": [Circular],
               "prev": Object {
                 "attribs": Object {
-                  "src": "van.png",
+                  "src": "test-file-stub",
                 },
                 "children": Array [],
                 "name": "img",
@@ -1287,9 +1287,5 @@ initialize {
   },
 }
 `;
-
-exports[`VisualBox should render correctly with no positioning 1`] = `ShallowWrapper {}`;
-
-exports[`VisualBox should render correctly with set positioning 1`] = `ShallowWrapper {}`;
 
 exports[`VisualBox should render correctly with weight and number of meals 1`] = `ShallowWrapper {}`;
