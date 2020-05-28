@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "cd client && npm install && npm run build && cd .. && node build.js",
-    "build:client": "cd client && npm install && npm run build",
+    "build:client": "cd client && npm run build",
     "build:server": "node build.js",
     "lint": "tslint --project \"tsconfig.json\"",
     "start": "node -r module-alias/register ./dist",
