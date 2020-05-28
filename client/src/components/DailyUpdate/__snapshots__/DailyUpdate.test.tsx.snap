@@ -1,0 +1,1295 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VisualBox should render correctly with children 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {
+      "class": "MuiBox-root MuiBox-root-1 daily-update-box",
+    },
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "daily-update-title",
+        },
+        "children": Array [
+          Object {
+            "data": "Today",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "h2",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "class": "test",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "src": "van.png",
+              },
+              "children": Array [],
+              "name": "img",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "style": "left:25px;top:20px",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "25",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": "kg of food have been donated.",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  Object {
+                    "data": "kg of food have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {},
+                      "children": Array [
+                        Object {
+                          "data": "25",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "b",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {},
+                      "x-attribsPrefix": Object {},
+                    },
+                    "type": "text",
+                  },
+                ],
+                "name": "p",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "style": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "style": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "src": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "src": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "style": "left:25px;top:20px",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {},
+                  "children": Array [
+                    Object {
+                      "data": "25",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "b",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": "kg of food have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+                Object {
+                  "data": "kg of food have been donated.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "25",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "src": "van.png",
+                },
+                "children": Array [],
+                "name": "img",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "src": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "src": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "style": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "style": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {
+              "class": "test",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "src": "vanRev.png",
+                },
+                "children": Array [],
+                "name": "img",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "style": "left:190px;top:20px",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {},
+                      "children": Array [
+                        Object {
+                          "data": "19",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "b",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": Object {
+                        "data": "meals have been donated.",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "text",
+                      },
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {},
+                      "x-attribsPrefix": Object {},
+                    },
+                    Object {
+                      "data": "meals have been donated.",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {},
+                        "children": Array [
+                          Object {
+                            "data": "19",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "b",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                        "x-attribsNamespace": Object {},
+                        "x-attribsPrefix": Object {},
+                      },
+                      "type": "text",
+                    },
+                  ],
+                  "name": "p",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "style": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "style": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "src": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "src": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "style": "left:190px;top:20px",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "19",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": "meals have been donated.",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  Object {
+                    "data": "meals have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {},
+                      "children": Array [
+                        Object {
+                          "data": "19",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "b",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {},
+                      "x-attribsPrefix": Object {},
+                    },
+                    "type": "text",
+                  },
+                ],
+                "name": "p",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "src": "vanRev.png",
+                  },
+                  "children": Array [],
+                  "name": "img",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "src": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "src": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "style": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "style": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "class": "test",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "src": "van.png",
+            },
+            "children": Array [],
+            "name": "img",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "style": "left:25px;top:20px",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {},
+                  "children": Array [
+                    Object {
+                      "data": "25",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "b",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": "kg of food have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+                Object {
+                  "data": "kg of food have been donated.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "25",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "style": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "style": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "src": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "src": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "style": "left:25px;top:20px",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {},
+                "children": Array [
+                  Object {
+                    "data": "25",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "b",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "data": "kg of food have been donated.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "text",
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+              Object {
+                "data": "kg of food have been donated.",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {},
+                  "children": Array [
+                    Object {
+                      "data": "25",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "b",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+                "type": "text",
+              },
+            ],
+            "name": "p",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "src": "van.png",
+              },
+              "children": Array [],
+              "name": "img",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "src": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "src": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "style": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "style": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "class": "test",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "src": "vanRev.png",
+              },
+              "children": Array [],
+              "name": "img",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "style": "left:190px;top:20px",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "19",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": "meals have been donated.",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  Object {
+                    "data": "meals have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {},
+                      "children": Array [
+                        Object {
+                          "data": "19",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "b",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {},
+                      "x-attribsPrefix": Object {},
+                    },
+                    "type": "text",
+                  },
+                ],
+                "name": "p",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "style": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "style": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "src": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "src": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "style": "left:190px;top:20px",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {},
+                  "children": Array [
+                    Object {
+                      "data": "19",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "b",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": "meals have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+                Object {
+                  "data": "meals have been donated.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "19",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "src": "vanRev.png",
+                },
+                "children": Array [],
+                "name": "img",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "src": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "src": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "style": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "style": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "class": "daily-update-title",
+          },
+          "children": Array [
+            Object {
+              "data": "Today",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "h2",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "class": "test",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "src": "vanRev.png",
+            },
+            "children": Array [],
+            "name": "img",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "style": "left:190px;top:20px",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {},
+                  "children": Array [
+                    Object {
+                      "data": "19",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "b",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": "meals have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+                Object {
+                  "data": "meals have been donated.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "19",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "style": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "style": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "src": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "src": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "style": "left:190px;top:20px",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {},
+                "children": Array [
+                  Object {
+                    "data": "19",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "b",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "data": "meals have been donated.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "text",
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {},
+                "x-attribsPrefix": Object {},
+              },
+              Object {
+                "data": "meals have been donated.",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {},
+                  "children": Array [
+                    Object {
+                      "data": "19",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "b",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+                "type": "text",
+              },
+            ],
+            "name": "p",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "src": "vanRev.png",
+              },
+              "children": Array [],
+              "name": "img",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "src": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "src": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "style": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "style": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "class": "test",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "src": "van.png",
+              },
+              "children": Array [],
+              "name": "img",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "style": "left:25px;top:20px",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "25",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": Object {
+                      "data": "kg of food have been donated.",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "text",
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  Object {
+                    "data": "kg of food have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {},
+                      "children": Array [
+                        Object {
+                          "data": "25",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "b",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {},
+                      "x-attribsPrefix": Object {},
+                    },
+                    "type": "text",
+                  },
+                ],
+                "name": "p",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "style": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "style": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "src": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "src": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "style": "left:25px;top:20px",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {},
+                  "children": Array [
+                    Object {
+                      "data": "25",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "b",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "data": "kg of food have been donated.",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "text",
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {},
+                  "x-attribsPrefix": Object {},
+                },
+                Object {
+                  "data": "kg of food have been donated.",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {},
+                    "children": Array [
+                      Object {
+                        "data": "25",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "b",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {},
+                    "x-attribsPrefix": Object {},
+                  },
+                  "type": "text",
+                },
+              ],
+              "name": "p",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "src": "van.png",
+                },
+                "children": Array [],
+                "name": "img",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "src": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "src": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "style": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "style": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {
+              "class": "daily-update-title",
+            },
+            "children": Array [
+              Object {
+                "data": "Today",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "h2",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
+
+exports[`VisualBox should render correctly with no positioning 1`] = `ShallowWrapper {}`;
+
+exports[`VisualBox should render correctly with set positioning 1`] = `ShallowWrapper {}`;
+
+exports[`VisualBox should render correctly with weight and number of meals 1`] = `ShallowWrapper {}`;

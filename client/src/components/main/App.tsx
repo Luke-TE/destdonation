@@ -13,6 +13,8 @@ import CurrentDonation from "../CurrentDonation/CurrentDonation.tsx";
 // @ts-ignore
 import Error from "../Error/Error.tsx";
 
+import "typeface-roboto";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {
