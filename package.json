@@ -62,5 +62,10 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "jest": {
+    "testMatch": [
+      "**/src/**/*.test.ts"
+    ]
   }
 }
