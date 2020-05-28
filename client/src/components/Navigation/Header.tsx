@@ -46,7 +46,7 @@ export default function ButtonAppBar() {
             DestDonation
           </Typography>
           <Button style={{ color: "#658C47" }}>
-            <img src={icon} width={30}></img>
+            <img src={icon} width={30} alt={""}></img>
           </Button>
         </Toolbar>
       </AppBar>
