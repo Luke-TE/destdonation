@@ -1,14 +1,22 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
-import icon from "./greenIcon.png";
+import {
+  AppBar,
+  Button,
+  Drawer,
+  IconButton,
+  MenuList,
+  MenuItem,
+  ListItemText,
+  Toolbar,
+  Typography,
+  List,
+} from "@material-ui/core";
+import icon from "./icon.png";
 
-const useStyles = makeStyles((theme: Theme) =>
+export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
       flexGrow: 1,
@@ -20,36 +28,84 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
       textAlign: "center",
     },
+    list: {
+      width: 250,
+    },
+    fullList: {
+      width: "auto",
+    },
+    drawer: {
+      width: 300,
+    },
   })
 );
 
-export default function ButtonAppBar() {
+export default function ButtonAppBar(props: any) {
   const classes = useStyles();
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleDrawer = (open: boolean) => (event: React.MouseEvent) => {
+    if (event.type === "keydown") {
+      return;
+    }
+    setIsOpen(open);
+  };
 
   return (
-    <div className={classes.root}>
-      <AppBar style={{ background: "#FFFFFF" }} position="static">
-        <Toolbar>
-          <IconButton
-            style={{ color: "#658C47" }}
-            edge="start"
-            className={classes.menuButton}
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            className={classes.title}
-            style={{ color: "#658C47" }}
-          >
-            DestDonation
-          </Typography>
-          <Button style={{ color: "#658C47" }}>
-            <img src={icon} width={30} alt={""}></img>
-          </Button>
-        </Toolbar>
-      </AppBar>
+    <div>
+      <div className={classes.root}>
+        <AppBar position="static">
+          <Toolbar>
+            <IconButton
+              edge="start"
+              className={classes.menuButton}
+              color="inherit"
+              aria-label="menu"
+              onClick={toggleDrawer(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+
+            <Typography variant="h6" className={classes.title}>
+              DestDonation
+            </Typography>
+
+            <Button color="inherit">
+              <img src={icon} width={30} color="auto"></img>
+            </Button>
+          </Toolbar>
+        </AppBar>
+      </div>
+
+      <Drawer
+        classes={{ paper: classes.drawer }}
+        open={isOpen}
+        onClose={toggleDrawer(false)}
+      >
+        <div
+          className={classes.fullList}
+          role="presentation"
+          onClick={toggleDrawer(false)}
+        >
+          <MenuList>
+            <NavLink to="/">
+              <MenuItem>
+                <ListItemText>Home</ListItemText>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/Analytics">
+              <MenuItem>
+                <ListItemText>Analytics</ListItemText>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/Current-Donation">
+              <MenuItem>
+                <ListItemText>Current Donation</ListItemText>
+              </MenuItem>
+            </NavLink>
+          </MenuList>
+        </div>
+      </Drawer>
     </div>
   );
 }
