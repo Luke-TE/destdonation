@@ -1,0 +1,22 @@
+.daily-update-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(162, 240, 62, 0.3);
+  width: 30%;
+  float: right;
+  margin-right: 4em;
+  margin-left: 4em;
+  border-radius: 1%;
+  font-size: 2em;
+}
+
+.daily-update-box * {
+  margin: 0.3em;
+}
+
+.daily-update-box img {
+  display: flex;
+  object-fit: contain;
+  max-width: 100%;
+}

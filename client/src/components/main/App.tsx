@@ -15,6 +15,8 @@ import Error from "../Error/Error.tsx";
 // @ts-ignore
 import Header from "../Navigation/Header.tsx";
 
+import "typeface-roboto";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 
 class App extends Component {

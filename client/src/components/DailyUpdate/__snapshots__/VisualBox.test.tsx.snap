@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VisualBox should render correctly with no positioning 1`] = `ShallowWrapper {}`;
+
+exports[`VisualBox should render correctly with set positioning 1`] = `ShallowWrapper {}`;

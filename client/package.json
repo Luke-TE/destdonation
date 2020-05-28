@@ -50,5 +50,11 @@
     "@types/enzyme": "^3.10.5",
     "@types/react-vertical-timeline-component": "^2.6.0",
     "react-router-dom": "^5.2.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.ts",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.ts"
+    }
   }
 }
