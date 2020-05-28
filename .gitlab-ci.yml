@@ -1,0 +1,21 @@
+stages:
+  - test
+  - deploy
+
+testing frontend:
+  stage: test
+  script:
+    - cd client
+    - npm ci
+    - npm run test:CI
+
+testing backend:
+  stage: test
+  script:    
+    - npm ci
+    - npm run test:CI
+
+deploying to heroku:
+  stage: deploy
+  script:
+    - dpl --provider=heroku --app=shielded-savannah-74147 --api-key=$HEROKU_API_KEY
