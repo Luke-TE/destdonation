@@ -12,6 +12,7 @@
 /build
 /logs
 /dist
+/src/public
 
 # misc
 .DS_Store

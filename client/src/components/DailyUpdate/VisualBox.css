@@ -1,0 +1,13 @@
+.test p {
+  position: absolute;
+  padding: auto;
+  width: 60%;
+}
+
+.test {
+  position: relative;
+}
+
+.test img {
+  width: 100%;
+}
