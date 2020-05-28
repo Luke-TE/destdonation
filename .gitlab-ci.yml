@@ -5,14 +5,13 @@ stages:
 testing frontend:
   stage: test
   script:
-    - cd frontend
+    - cd client
     - npm ci
     - npm run test:CI
 
 testing backend:
   stage: test
-  script:
-    - cd backend
+  script:    
     - npm ci
     - npm run test:CI
 
