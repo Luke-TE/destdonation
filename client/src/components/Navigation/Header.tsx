@@ -2,7 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
+import CloseIcon from "@material-ui/icons/Close";
 import {
+  Avatar,
   AppBar,
   Button,
   Drawer,
@@ -12,9 +14,15 @@ import {
   ListItemText,
   Toolbar,
   Typography,
-  List,
 } from "@material-ui/core";
+<<<<<<< HEAD
 import icon from "./icon.png";
+=======
+
+import icon from "./greenIcon.png";
+>>>>>>> [if2818] added Header.css and changed text style of menu
+
+import "./Header.css";
 
 export const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -36,6 +44,19 @@ export const useStyles = makeStyles((theme: Theme) =>
     },
     drawer: {
       width: 300,
+      background: "#317d01",
+      opacity: 0.85,
+    },
+    navMenu: {},
+    companyAvatar: {
+      alignSelf: "center",
+      width: 100,
+      height: 100,
+    },
+
+    closeMenuButton: {
+      marginRight: "auto",
+      marginLeft: 0,
     },
   })
 );
@@ -81,29 +102,52 @@ export default function ButtonAppBar(props: any) {
         classes={{ paper: classes.drawer }}
         open={isOpen}
         onClose={toggleDrawer(false)}
+        style={{ color: "#317d01" }}
       >
+        <IconButton
+          style={{ color: "#FFFFFF" }}
+          edge="start"
+          aria-label="menu"
+          onClick={toggleDrawer(false)}
+          className={classes.closeMenuButton}
+        >
+          <CloseIcon />
+        </IconButton>
+
+        <Avatar className={classes.companyAvatar}>C</Avatar>
+
         <div
           className={classes.fullList}
           role="presentation"
           onClick={toggleDrawer(false)}
         >
-          <MenuList>
-            <NavLink to="/">
-              <MenuItem>
-                <ListItemText>Home</ListItemText>
-              </MenuItem>
-            </NavLink>
-            <NavLink to="/Analytics">
-              <MenuItem>
-                <ListItemText>Analytics</ListItemText>
-              </MenuItem>
-            </NavLink>
-            <NavLink to="/Current-Donation">
-              <MenuItem>
-                <ListItemText>Current Donation</ListItemText>
-              </MenuItem>
-            </NavLink>
-          </MenuList>
+          <div className="homeMenu">
+            <MenuList className={classes.navMenu}>
+              <NavLink to="/">
+                <MenuItem>
+                  <ListItemText style={{ color: "white" }}>
+                    <p className="menuEntry">Home</p>
+                  </ListItemText>
+                </MenuItem>
+              </NavLink>
+
+              <NavLink to="/Analytics">
+                <MenuItem>
+                  <ListItemText style={{ color: "white" }}>
+                    <p className="menuEntry">Analytics</p>
+                  </ListItemText>
+                </MenuItem>
+              </NavLink>
+
+              <NavLink to="/Current-Donation">
+                <MenuItem>
+                  <ListItemText style={{ color: "white" }}>
+                    <p className="menuEntry">Current Donation</p>
+                  </ListItemText>
+                </MenuItem>
+              </NavLink>
+            </MenuList>
+          </div>
         </div>
       </Drawer>
     </div>
