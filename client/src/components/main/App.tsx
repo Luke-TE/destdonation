@@ -12,7 +12,6 @@ import Analytics from "../Analytics/Analytics.tsx";
 import CurrentDonation from "../CurrentDonation/CurrentDonation.tsx";
 // @ts-ignore
 import Error from "../Error/Error.tsx";
-import { render } from "react-dom";
 
 class App extends Component {
   render() {
