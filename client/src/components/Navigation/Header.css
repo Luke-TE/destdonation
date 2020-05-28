@@ -1,4 +1,5 @@
 .menuEntry {
+  color: white;
   font-size: 25px;
   font-weight: bold;
 }
@@ -14,6 +15,11 @@
 }
 
 .companyAvatar {
-  width: 100;
-  height: 100;
+  width: 300;
+  height: 300;
+}
+
+.logout {
+  position: absolute;
+  bottom: 15px;
 }

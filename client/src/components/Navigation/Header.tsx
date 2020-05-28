@@ -15,12 +15,8 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core";
-<<<<<<< HEAD
-import icon from "./icon.png";
-=======
 
 import icon from "./greenIcon.png";
->>>>>>> [if2818] added Header.css and changed text style of menu
 
 import "./Header.css";
 
