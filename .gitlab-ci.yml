@@ -1,6 +1,6 @@
 stages:
   - test
-  - deploy
+  - production
 
 testing frontend:
   stage: test
@@ -11,11 +11,18 @@ testing frontend:
 
 testing backend:
   stage: test
-  script:    
+  script:
     - npm ci
     - npm run test:CI
 
 deploying to heroku:
-  stage: deploy
+  stage: production
   script:
     - dpl --provider=heroku --app=shielded-savannah-74147 --api-key=$HEROKU_API_KEY
+  environment:
+    name: Heroku
+    url: https://shielded-savannah-74147.herokuapp.com/
+
+  only:
+    - develop
+    - master
