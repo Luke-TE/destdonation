@@ -1,0 +1,68 @@
+import * as React from "react";
+import Paper from "@material-ui/core/Paper";
+import {
+  ArgumentAxis,
+  ValueAxis,
+  BarSeries,
+  Chart,
+  LineSeries,
+} from "@devexpress/dx-react-chart-material-ui";
+
+import { ValueScale } from "@devexpress/dx-react-chart";
+
+interface IDataItem {
+  month: string;
+  sale: number;
+  total: number;
+}
+
+const chartData: IDataItem[] = [
+  { month: "Jan", sale: 50, total: 987 },
+  { month: "Feb", sale: 100, total: 3000 },
+  { month: "March", sale: 30, total: 1100 },
+  { month: "April", sale: 107, total: 7100 },
+  { month: "May", sale: 95, total: 4300 },
+  { month: "June", sale: 150, total: 7500 },
+];
+
+export default class Demo extends React.Component<object, object> {
+  public render(): React.ReactNode {
+    return (
+      <Paper>
+        <Chart data={chartData}>
+          <ValueScale name="sale" />
+          <ValueScale name="total" />
+
+          <ArgumentAxis />
+          <ValueAxis
+            scaleName="sale"
+            showGrid={false}
+            showLine={true}
+            showTicks={true}
+          />
+          <ValueAxis
+            scaleName="total"
+            position="right"
+            showGrid={false}
+            showLine={true}
+            showTicks={true}
+          />
+
+          <BarSeries
+            name="Units Sold"
+            valueField="sale"
+            argumentField="month"
+            scaleName="sale"
+          />
+
+          <LineSeries
+            name="Total Transactions"
+            valueField="total"
+            argumentField="month"
+            scaleName="total"
+          />
+        </Chart>
+      </Paper>
+    );
+  }
+}
