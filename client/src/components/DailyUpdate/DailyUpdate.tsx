@@ -1,8 +1,6 @@
 import * as React from "react";
 import { Box } from "@material-ui/core";
 import VisualBox from "./VisualBox";
-import { useQuery } from "@apollo/react-hooks";
-import { gql } from "apollo-boost";
 
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,16 +10,24 @@ import "./DailyUpdate.css";
 import van from "./van.png";
 import vanRev from "./vanRev.png";
 
-import UserContext from "../../UserContext";
+import GraphQLContext from "../../GraphQLContext";
 
 export interface DailyUpdateProps {}
 
-const DailyUpdate = () => {
-  const user = React.useContext(UserContext);
+export interface DailyUpdateState {
+  foodWeight: number;
+  numOfMeals: number;
+}
 
-  const query = gql`
+class DailyUpdate extends React.Component<DailyUpdateProps, DailyUpdateState> {
+  state = { foodWeight: 0.0, numOfMeals: 0.0 };
+
+  static contextType = GraphQLContext;
+
+  componentDidMount() {
+    const query = `
     {
-      allDeliveries(condition: {partnerId: ${user}}) {
+      allDeliveries(condition: {partnerId: ${this.context.user}}) {
         edges {
           node {            
             totalKg
@@ -32,41 +38,43 @@ const DailyUpdate = () => {
     }
     `;
 
-  let foodWeight = 0.0;
-  let numOfMeals = 0.0;
+    this.context.client
+      .request(query, {})
+      .then((data: any) => {
+        let foodWeight = 0.0;
+        let numOfMeals = 0.0;
 
-  const { loading, error, data } = useQuery(query);
+        // todo: fix this so it filters to today's date
+        // todo: make this have proper types
+        // todo: use destructuring
+        let totalKg = 0.0;
+        let totalMeals = 0.0;
 
-  if (!(loading || error)) {
-    // todo: fix this so it filters to today's date
-    // todo: make this have proper types
-    // todo: fix this so it is a class component
-    // todo: use destructuring
-    let totalKg = 0.0;
-    let totalMeals = 0.0;
+        for (let edge of data.allDeliveries.edges) {
+          totalKg += edge.node.totalKg;
+          totalMeals += edge.node.totalMeals;
+        }
 
-    for (let edge of data.allDeliveries.edges) {
-      totalKg += edge.node.totalKg;
-      totalMeals += edge.node.totalMeals;
-    }
-
-    foodWeight = totalKg;
-    numOfMeals = totalMeals;
+        this.setState({ foodWeight: totalKg, numOfMeals: totalMeals });
+      })
+      .catch((error: any) => this.setState({ foodWeight: 0, numOfMeals: 0 }));
   }
 
-  return (
-    <Box className="daily-update-box">
-      <h2 className="daily-update-title">Today</h2>
+  render() {
+    return (
+      <Box className="daily-update-box">
+        <h2 className="daily-update-title">Today</h2>
 
-      <VisualBox imageSrc={van} leftOffset={25} topOffset={20}>
-        <b>{foodWeight}</b>kg of food have been donated.
-      </VisualBox>
+        <VisualBox imageSrc={van} leftOffset={25} topOffset={20}>
+          <b>{this.state.foodWeight}</b>kg of food have been donated.
+        </VisualBox>
 
-      <VisualBox imageSrc={vanRev} leftOffset={170} topOffset={20}>
-        <b>{numOfMeals}</b>meals have been donated.
-      </VisualBox>
-    </Box>
-  );
-};
+        <VisualBox imageSrc={vanRev} leftOffset={170} topOffset={20}>
+          <b>{this.state.numOfMeals}</b>meals have been donated.
+        </VisualBox>
+      </Box>
+    );
+  }
+}
 
 export default DailyUpdate;

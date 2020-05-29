@@ -19,39 +19,34 @@ import "typeface-roboto";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { ApolloProvider } from "@apollo/react-hooks";
+import GraphQLContext from "./GraphQLContext";
+import { GraphQLClient } from "graphql-request";
 
-import UserContext from "./UserContext";
-
-import ApolloClient from "apollo-boost";
-
-const client = new ApolloClient({
-  uri: `${window.location.origin.toString()}/graphql`,
-});
+const context = {
+  client: new GraphQLClient(`${window.location.origin.toString()}/graphql`, {
+    headers: {},
+  }),
+  user: 11,
+};
 
 class App extends Component {
   render() {
     return (
       <div className="page-container">
         <div className="content-wrap">
-          <UserContext.Provider value={11}>
-            <ApolloProvider client={client}>
-              <BrowserRouter>
-                <div>
-                  <Header></Header>
-                  <Switch>
-                    <Route path="/" component={Home} exact />
-                    <Route
-                      path="/Current-Donation"
-                      component={CurrentDonation}
-                    />
-                    <Route path="/Analytics" component={Analytics} />
-                    <Route component={Error} />
-                  </Switch>
-                </div>
-              </BrowserRouter>
-            </ApolloProvider>
-          </UserContext.Provider>
+          <GraphQLContext.Provider value={context}>
+            <BrowserRouter>
+              <div>
+                <Header></Header>
+                <Switch>
+                  <Route path="/" component={Home} exact />
+                  <Route path="/Current-Donation" component={CurrentDonation} />
+                  <Route path="/Analytics" component={Analytics} />
+                  <Route component={Error} />
+                </Switch>
+              </div>
+            </BrowserRouter>
+          </GraphQLContext.Provider>
         </div>
         <Footer></Footer>
       </div>
