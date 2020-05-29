@@ -19,22 +19,34 @@ import "typeface-roboto";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import GraphQLContext from "./GraphQLContext";
+import { GraphQLClient } from "graphql-request";
+
+const context = {
+  client: new GraphQLClient(`${window.location.origin.toString()}/graphql`, {
+    headers: {},
+  }),
+  user: 11,
+};
+
 class App extends Component {
   render() {
     return (
       <div className="page-container">
         <div className="content-wrap">
-          <BrowserRouter>
-            <div>
-              <Header></Header>
-              <Switch>
-                <Route path="/" component={Home} exact />
-                <Route path="/Current-Donation" component={CurrentDonation} />
-                <Route path="/Analytics" component={Analytics} />
-                <Route component={Error} />
-              </Switch>
-            </div>
-          </BrowserRouter>
+          <GraphQLContext.Provider value={context}>
+            <BrowserRouter>
+              <div>
+                <Header></Header>
+                <Switch>
+                  <Route path="/" component={Home} exact />
+                  <Route path="/Current-Donation" component={CurrentDonation} />
+                  <Route path="/Analytics" component={Analytics} />
+                  <Route component={Error} />
+                </Switch>
+              </div>
+            </BrowserRouter>
+          </GraphQLContext.Provider>
         </div>
         <Footer></Footer>
       </div>

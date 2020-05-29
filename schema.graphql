@@ -1,0 +1,2659 @@
+"""
+All input for the create `Delivery` mutation.
+"""
+input CreateDeliveryInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The `Delivery` to be created by this mutation.
+  """
+  delivery: DeliveryInput!
+}
+
+"""
+The output of our create `Delivery` mutation.
+"""
+type CreateDeliveryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Delivery` that was created by this mutation.
+  """
+  delivery: Delivery
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `Project` that is related to this `Delivery`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Delivery`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Delivery`.
+  """
+  partnerByPartnerId: Partner
+
+  """
+  An edge for our `Delivery`. May be used by Relay 1.
+  """
+  deliveryEdge(
+    """
+    The method to use when ordering `Delivery`.
+    """
+    orderBy: [DeliveriesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DeliveriesEdge
+}
+
+"""
+All input for the create `Driver` mutation.
+"""
+input CreateDriverInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The `Driver` to be created by this mutation.
+  """
+  driver: DriverInput!
+}
+
+"""
+The output of our create `Driver` mutation.
+"""
+type CreateDriverPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Driver` that was created by this mutation.
+  """
+  driver: Driver
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `Driver`. May be used by Relay 1.
+  """
+  driverEdge(
+    """
+    The method to use when ordering `Driver`.
+    """
+    orderBy: [DriversOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DriversEdge
+}
+
+"""
+All input for the create `FoodDonor` mutation.
+"""
+input CreateFoodDonorInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The `FoodDonor` to be created by this mutation.
+  """
+  foodDonor: FoodDonorInput!
+}
+
+"""
+The output of our create `FoodDonor` mutation.
+"""
+type CreateFoodDonorPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `FoodDonor` that was created by this mutation.
+  """
+  foodDonor: FoodDonor
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `FoodDonor`. May be used by Relay 1.
+  """
+  foodDonorEdge(
+    """
+    The method to use when ordering `FoodDonor`.
+    """
+    orderBy: [FoodDonorsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FoodDonorsEdge
+}
+
+"""
+All input for the create `Partner` mutation.
+"""
+input CreatePartnerInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The `Partner` to be created by this mutation.
+  """
+  partner: PartnerInput!
+}
+
+"""
+The output of our create `Partner` mutation.
+"""
+type CreatePartnerPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Partner` that was created by this mutation.
+  """
+  partner: Partner
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `Partner`. May be used by Relay 1.
+  """
+  partnerEdge(
+    """
+    The method to use when ordering `Partner`.
+    """
+    orderBy: [PartnersOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PartnersEdge
+}
+
+"""
+All input for the create `Pickup` mutation.
+"""
+input CreatePickupInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The `Pickup` to be created by this mutation.
+  """
+  pickup: PickupInput!
+}
+
+"""
+The output of our create `Pickup` mutation.
+"""
+type CreatePickupPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Pickup` that was created by this mutation.
+  """
+  pickup: Pickup
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `Project` that is related to this `Pickup`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Pickup`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Pickup`.
+  """
+  partnerByPartnerId: Partner
+
+  """
+  An edge for our `Pickup`. May be used by Relay 1.
+  """
+  pickupEdge(
+    """
+    The method to use when ordering `Pickup`.
+    """
+    orderBy: [PickupsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PickupsEdge
+}
+
+"""
+All input for the create `Project` mutation.
+"""
+input CreateProjectInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  The `Project` to be created by this mutation.
+  """
+  project: ProjectInput!
+}
+
+"""
+The output of our create `Project` mutation.
+"""
+type CreateProjectPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Project` that was created by this mutation.
+  """
+  project: Project
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `FoodDonor` that is related to this `Project`.
+  """
+  foodDonorByDonorId: FoodDonor
+
+  """
+  An edge for our `Project`. May be used by Relay 1.
+  """
+  projectEdge(
+    """
+    The method to use when ordering `Project`.
+    """
+    orderBy: [ProjectsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): ProjectsEdge
+}
+
+"""
+A location in a connection that can be used for resuming pagination.
+"""
+scalar Cursor
+
+"""
+The day, does not include a time.
+"""
+scalar Date
+
+"""
+All input for the `deleteDeliveryById` mutation.
+"""
+input DeleteDeliveryByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: Int!
+}
+
+"""
+The output of our delete `Delivery` mutation.
+"""
+type DeleteDeliveryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Delivery` that was deleted by this mutation.
+  """
+  delivery: Delivery
+  deletedDeliveryId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `Project` that is related to this `Delivery`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Delivery`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Delivery`.
+  """
+  partnerByPartnerId: Partner
+
+  """
+  An edge for our `Delivery`. May be used by Relay 1.
+  """
+  deliveryEdge(
+    """
+    The method to use when ordering `Delivery`.
+    """
+    orderBy: [DeliveriesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DeliveriesEdge
+}
+
+"""
+All input for the `deleteDriverById` mutation.
+"""
+input DeleteDriverByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: Int!
+}
+
+"""
+The output of our delete `Driver` mutation.
+"""
+type DeleteDriverPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Driver` that was deleted by this mutation.
+  """
+  driver: Driver
+  deletedDriverId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `Driver`. May be used by Relay 1.
+  """
+  driverEdge(
+    """
+    The method to use when ordering `Driver`.
+    """
+    orderBy: [DriversOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DriversEdge
+}
+
+"""
+All input for the `deleteFoodDonorById` mutation.
+"""
+input DeleteFoodDonorByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: Int!
+}
+
+"""
+The output of our delete `FoodDonor` mutation.
+"""
+type DeleteFoodDonorPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `FoodDonor` that was deleted by this mutation.
+  """
+  foodDonor: FoodDonor
+  deletedFoodDonorId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `FoodDonor`. May be used by Relay 1.
+  """
+  foodDonorEdge(
+    """
+    The method to use when ordering `FoodDonor`.
+    """
+    orderBy: [FoodDonorsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FoodDonorsEdge
+}
+
+"""
+All input for the `deletePartnerById` mutation.
+"""
+input DeletePartnerByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: Int!
+}
+
+"""
+The output of our delete `Partner` mutation.
+"""
+type DeletePartnerPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Partner` that was deleted by this mutation.
+  """
+  partner: Partner
+  deletedPartnerId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `Partner`. May be used by Relay 1.
+  """
+  partnerEdge(
+    """
+    The method to use when ordering `Partner`.
+    """
+    orderBy: [PartnersOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PartnersEdge
+}
+
+"""
+All input for the `deletePickupById` mutation.
+"""
+input DeletePickupByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: Int!
+}
+
+"""
+The output of our delete `Pickup` mutation.
+"""
+type DeletePickupPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Pickup` that was deleted by this mutation.
+  """
+  pickup: Pickup
+  deletedPickupId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `Project` that is related to this `Pickup`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Pickup`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Pickup`.
+  """
+  partnerByPartnerId: Partner
+
+  """
+  An edge for our `Pickup`. May be used by Relay 1.
+  """
+  pickupEdge(
+    """
+    The method to use when ordering `Pickup`.
+    """
+    orderBy: [PickupsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PickupsEdge
+}
+
+"""
+All input for the `deleteProjectById` mutation.
+"""
+input DeleteProjectByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+  id: Int!
+}
+
+"""
+The output of our delete `Project` mutation.
+"""
+type DeleteProjectPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Project` that was deleted by this mutation.
+  """
+  project: Project
+  deletedProjectId: ID
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `FoodDonor` that is related to this `Project`.
+  """
+  foodDonorByDonorId: FoodDonor
+
+  """
+  An edge for our `Project`. May be used by Relay 1.
+  """
+  projectEdge(
+    """
+    The method to use when ordering `Project`.
+    """
+    orderBy: [ProjectsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): ProjectsEdge
+}
+
+"""
+A connection to a list of `Delivery` values.
+"""
+type DeliveriesConnection {
+  """
+  A list of `Delivery` objects.
+  """
+  nodes: [Delivery]!
+
+  """
+  A list of edges which contains the `Delivery` and cursor to aid in pagination.
+  """
+  edges: [DeliveriesEdge!]!
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `Delivery` you could get from the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A `Delivery` edge in the connection.
+"""
+type DeliveriesEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: Cursor
+
+  """
+  The `Delivery` at the end of the edge.
+  """
+  node: Delivery
+}
+
+"""
+Methods to use when ordering `Delivery`.
+"""
+enum DeliveriesOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  PROJECT_ID_ASC
+  PROJECT_ID_DESC
+  DRIVER_ID_ASC
+  DRIVER_ID_DESC
+  PARTNER_ID_ASC
+  PARTNER_ID_DESC
+  DATE_PICKED_UP_ASC
+  DATE_PICKED_UP_DESC
+  TOTAL_MEALS_ASC
+  TOTAL_MEALS_DESC
+  TOTAL_KG_ASC
+  TOTAL_KG_DESC
+  FRUIT_AND_VEG_KG_ASC
+  FRUIT_AND_VEG_KG_DESC
+  MEAT_AND_POULTRY_KG_ASC
+  MEAT_AND_POULTRY_KG_DESC
+  DAIRY_ITEMS_KG_ASC
+  DAIRY_ITEMS_KG_DESC
+  FROZEN_FOOD_KG_ASC
+  FROZEN_FOOD_KG_DESC
+  SNACKS_AND_BAKED_GOODS_KG_ASC
+  SNACKS_AND_BAKED_GOODS_KG_DESC
+  PERSONAL_CARE_ITEMS_KG_ASC
+  PERSONAL_CARE_ITEMS_KG_DESC
+  PANTRY_AND_GROCERY_ITEMS_KG_ASC
+  PANTRY_AND_GROCERY_ITEMS_KG_DESC
+  FRESH_PREPARED_MEALS_KG_ASC
+  FRESH_PREPARED_MEALS_KG_DESC
+  DELI_ITEMS_KG_ASC
+  DELI_ITEMS_KG_DESC
+  DRINKS_KG_ASC
+  DRINKS_KG_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+type Delivery {
+  id: Int!
+  projectId: Int
+  driverId: Int
+  partnerId: Int
+  datePickedUp: Date
+  totalMeals: Float
+  totalKg: Float
+  fruitAndVegKg: Float
+  meatAndPoultryKg: Float
+  dairyItemsKg: Float
+  frozenFoodKg: Float
+  snacksAndBakedGoodsKg: Float
+  personalCareItemsKg: Float
+  pantryAndGroceryItemsKg: Float
+  freshPreparedMealsKg: Float
+  deliItemsKg: Float
+  drinksKg: Float
+
+  """
+  Reads a single `Project` that is related to this `Delivery`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Delivery`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Delivery`.
+  """
+  partnerByPartnerId: Partner
+}
+
+"""
+A condition to be used against `Delivery` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input DeliveryCondition {
+  """
+  Checks for equality with the object’s `id` field.
+  """
+  id: Int
+
+  """
+  Checks for equality with the object’s `projectId` field.
+  """
+  projectId: Int
+
+  """
+  Checks for equality with the object’s `driverId` field.
+  """
+  driverId: Int
+
+  """
+  Checks for equality with the object’s `partnerId` field.
+  """
+  partnerId: Int
+
+  """
+  Checks for equality with the object’s `datePickedUp` field.
+  """
+  datePickedUp: Date
+
+  """
+  Checks for equality with the object’s `totalMeals` field.
+  """
+  totalMeals: Float
+
+  """
+  Checks for equality with the object’s `totalKg` field.
+  """
+  totalKg: Float
+
+  """
+  Checks for equality with the object’s `fruitAndVegKg` field.
+  """
+  fruitAndVegKg: Float
+
+  """
+  Checks for equality with the object’s `meatAndPoultryKg` field.
+  """
+  meatAndPoultryKg: Float
+
+  """
+  Checks for equality with the object’s `dairyItemsKg` field.
+  """
+  dairyItemsKg: Float
+
+  """
+  Checks for equality with the object’s `frozenFoodKg` field.
+  """
+  frozenFoodKg: Float
+
+  """
+  Checks for equality with the object’s `snacksAndBakedGoodsKg` field.
+  """
+  snacksAndBakedGoodsKg: Float
+
+  """
+  Checks for equality with the object’s `personalCareItemsKg` field.
+  """
+  personalCareItemsKg: Float
+
+  """
+  Checks for equality with the object’s `pantryAndGroceryItemsKg` field.
+  """
+  pantryAndGroceryItemsKg: Float
+
+  """
+  Checks for equality with the object’s `freshPreparedMealsKg` field.
+  """
+  freshPreparedMealsKg: Float
+
+  """
+  Checks for equality with the object’s `deliItemsKg` field.
+  """
+  deliItemsKg: Float
+
+  """
+  Checks for equality with the object’s `drinksKg` field.
+  """
+  drinksKg: Float
+}
+
+"""
+An input for mutations affecting `Delivery`
+"""
+input DeliveryInput {
+  id: Int
+  projectId: Int
+  driverId: Int
+  partnerId: Int
+  datePickedUp: Date
+  totalMeals: Float
+  totalKg: Float
+  fruitAndVegKg: Float
+  meatAndPoultryKg: Float
+  dairyItemsKg: Float
+  frozenFoodKg: Float
+  snacksAndBakedGoodsKg: Float
+  personalCareItemsKg: Float
+  pantryAndGroceryItemsKg: Float
+  freshPreparedMealsKg: Float
+  deliItemsKg: Float
+  drinksKg: Float
+}
+
+"""
+Represents an update to a `Delivery`. Fields that are set will be updated.
+"""
+input DeliveryPatch {
+  id: Int
+  projectId: Int
+  driverId: Int
+  partnerId: Int
+  datePickedUp: Date
+  totalMeals: Float
+  totalKg: Float
+  fruitAndVegKg: Float
+  meatAndPoultryKg: Float
+  dairyItemsKg: Float
+  frozenFoodKg: Float
+  snacksAndBakedGoodsKg: Float
+  personalCareItemsKg: Float
+  pantryAndGroceryItemsKg: Float
+  freshPreparedMealsKg: Float
+  deliItemsKg: Float
+  drinksKg: Float
+}
+
+type Driver {
+  id: Int!
+  code: String
+  display: String
+
+  """
+  Reads and enables pagination through a set of `Pickup`.
+  """
+  pickupsByDriverId(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Pickup`.
+    """
+    orderBy: [PickupsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PickupCondition
+  ): PickupsConnection!
+
+  """
+  Reads and enables pagination through a set of `Delivery`.
+  """
+  deliveriesByDriverId(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Delivery`.
+    """
+    orderBy: [DeliveriesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: DeliveryCondition
+  ): DeliveriesConnection!
+}
+
+"""
+A condition to be used against `Driver` object types. All fields are tested for equality and combined with a logical ‘and.’
+"""
+input DriverCondition {
+  """
+  Checks for equality with the object’s `id` field.
+  """
+  id: Int
+
+  """
+  Checks for equality with the object’s `code` field.
+  """
+  code: String
+
+  """
+  Checks for equality with the object’s `display` field.
+  """
+  display: String
+}
+
+"""
+An input for mutations affecting `Driver`
+"""
+input DriverInput {
+  id: Int
+  code: String
+  display: String
+}
+
+"""
+Represents an update to a `Driver`. Fields that are set will be updated.
+"""
+input DriverPatch {
+  id: Int
+  code: String
+  display: String
+}
+
+"""
+A connection to a list of `Driver` values.
+"""
+type DriversConnection {
+  """
+  A list of `Driver` objects.
+  """
+  nodes: [Driver]!
+
+  """
+  A list of edges which contains the `Driver` and cursor to aid in pagination.
+  """
+  edges: [DriversEdge!]!
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `Driver` you could get from the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A `Driver` edge in the connection.
+"""
+type DriversEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: Cursor
+
+  """
+  The `Driver` at the end of the edge.
+  """
+  node: Driver
+}
+
+"""
+Methods to use when ordering `Driver`.
+"""
+enum DriversOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  CODE_ASC
+  CODE_DESC
+  DISPLAY_ASC
+  DISPLAY_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+type FoodDonor {
+  id: Int!
+  londonBorough: String
+  businessType: String
+  postCode: String
+  name: String
+  isFoodDistributor: Boolean
+
+  """
+  Reads and enables pagination through a set of `Project`.
+  """
+  projectsByDonorId(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Project`.
+    """
+    orderBy: [ProjectsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: ProjectCondition
+  ): ProjectsConnection!
+}
+
+"""
+A condition to be used against `FoodDonor` object types. All fields are tested
+for equality and combined with a logical ‘and.’
+"""
+input FoodDonorCondition {
+  """
+  Checks for equality with the object’s `id` field.
+  """
+  id: Int
+
+  """
+  Checks for equality with the object’s `londonBorough` field.
+  """
+  londonBorough: String
+
+  """
+  Checks for equality with the object’s `businessType` field.
+  """
+  businessType: String
+
+  """
+  Checks for equality with the object’s `postCode` field.
+  """
+  postCode: String
+
+  """
+  Checks for equality with the object’s `name` field.
+  """
+  name: String
+
+  """
+  Checks for equality with the object’s `isFoodDistributor` field.
+  """
+  isFoodDistributor: Boolean
+}
+
+"""
+An input for mutations affecting `FoodDonor`
+"""
+input FoodDonorInput {
+  id: Int
+  londonBorough: String
+  businessType: String
+  postCode: String
+  name: String
+  isFoodDistributor: Boolean
+}
+
+"""
+Represents an update to a `FoodDonor`. Fields that are set will be updated.
+"""
+input FoodDonorPatch {
+  id: Int
+  londonBorough: String
+  businessType: String
+  postCode: String
+  name: String
+  isFoodDistributor: Boolean
+}
+
+"""
+A connection to a list of `FoodDonor` values.
+"""
+type FoodDonorsConnection {
+  """
+  A list of `FoodDonor` objects.
+  """
+  nodes: [FoodDonor]!
+
+  """
+  A list of edges which contains the `FoodDonor` and cursor to aid in pagination.
+  """
+  edges: [FoodDonorsEdge!]!
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `FoodDonor` you could get from the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A `FoodDonor` edge in the connection.
+"""
+type FoodDonorsEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: Cursor
+
+  """
+  The `FoodDonor` at the end of the edge.
+  """
+  node: FoodDonor
+}
+
+"""
+Methods to use when ordering `FoodDonor`.
+"""
+enum FoodDonorsOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  LONDON_BOROUGH_ASC
+  LONDON_BOROUGH_DESC
+  BUSINESS_TYPE_ASC
+  BUSINESS_TYPE_DESC
+  POST_CODE_ASC
+  POST_CODE_DESC
+  NAME_ASC
+  NAME_DESC
+  IS_FOOD_DISTRIBUTOR_ASC
+  IS_FOOD_DISTRIBUTOR_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+The root mutation type which contains root level fields which mutate data.
+"""
+type Mutation {
+  """
+  Creates a single `Delivery`.
+  """
+  createDelivery(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateDeliveryInput!
+  ): CreateDeliveryPayload
+
+  """
+  Creates a single `Driver`.
+  """
+  createDriver(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateDriverInput!
+  ): CreateDriverPayload
+
+  """
+  Creates a single `FoodDonor`.
+  """
+  createFoodDonor(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateFoodDonorInput!
+  ): CreateFoodDonorPayload
+
+  """
+  Creates a single `Partner`.
+  """
+  createPartner(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreatePartnerInput!
+  ): CreatePartnerPayload
+
+  """
+  Creates a single `Pickup`.
+  """
+  createPickup(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreatePickupInput!
+  ): CreatePickupPayload
+
+  """
+  Creates a single `Project`.
+  """
+  createProject(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: CreateProjectInput!
+  ): CreateProjectPayload
+
+  """
+  Updates a single `Delivery` using a unique key and a patch.
+  """
+  updateDeliveryById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateDeliveryByIdInput!
+  ): UpdateDeliveryPayload
+
+  """
+  Updates a single `Driver` using a unique key and a patch.
+  """
+  updateDriverById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateDriverByIdInput!
+  ): UpdateDriverPayload
+
+  """
+  Updates a single `FoodDonor` using a unique key and a patch.
+  """
+  updateFoodDonorById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateFoodDonorByIdInput!
+  ): UpdateFoodDonorPayload
+
+  """
+  Updates a single `Partner` using a unique key and a patch.
+  """
+  updatePartnerById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdatePartnerByIdInput!
+  ): UpdatePartnerPayload
+
+  """
+  Updates a single `Pickup` using a unique key and a patch.
+  """
+  updatePickupById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdatePickupByIdInput!
+  ): UpdatePickupPayload
+
+  """
+  Updates a single `Project` using a unique key and a patch.
+  """
+  updateProjectById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: UpdateProjectByIdInput!
+  ): UpdateProjectPayload
+
+  """
+  Deletes a single `Delivery` using a unique key.
+  """
+  deleteDeliveryById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteDeliveryByIdInput!
+  ): DeleteDeliveryPayload
+
+  """
+  Deletes a single `Driver` using a unique key.
+  """
+  deleteDriverById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteDriverByIdInput!
+  ): DeleteDriverPayload
+
+  """
+  Deletes a single `FoodDonor` using a unique key.
+  """
+  deleteFoodDonorById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteFoodDonorByIdInput!
+  ): DeleteFoodDonorPayload
+
+  """
+  Deletes a single `Partner` using a unique key.
+  """
+  deletePartnerById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeletePartnerByIdInput!
+  ): DeletePartnerPayload
+
+  """
+  Deletes a single `Pickup` using a unique key.
+  """
+  deletePickupById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeletePickupByIdInput!
+  ): DeletePickupPayload
+
+  """
+  Deletes a single `Project` using a unique key.
+  """
+  deleteProjectById(
+    """
+    The exclusive input argument for this mutation. An object type, make sure to see documentation for this object’s fields.
+    """
+    input: DeleteProjectByIdInput!
+  ): DeleteProjectPayload
+}
+
+"""
+Information about pagination in a connection.
+"""
+type PageInfo {
+  """
+  When paginating forwards, are there more items?
+  """
+  hasNextPage: Boolean!
+
+  """
+  When paginating backwards, are there more items?
+  """
+  hasPreviousPage: Boolean!
+
+  """
+  When paginating backwards, the cursor to continue.
+  """
+  startCursor: Cursor
+
+  """
+  When paginating forwards, the cursor to continue.
+  """
+  endCursor: Cursor
+}
+
+type Partner {
+  id: Int!
+  name: String
+  vanNumber: String
+
+  """
+  Reads and enables pagination through a set of `Pickup`.
+  """
+  pickupsByPartnerId(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Pickup`.
+    """
+    orderBy: [PickupsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PickupCondition
+  ): PickupsConnection!
+
+  """
+  Reads and enables pagination through a set of `Delivery`.
+  """
+  deliveriesByPartnerId(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Delivery`.
+    """
+    orderBy: [DeliveriesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: DeliveryCondition
+  ): DeliveriesConnection!
+}
+
+"""
+A condition to be used against `Partner` object types. All fields are tested for equality and combined with a logical ‘and.’
+"""
+input PartnerCondition {
+  """
+  Checks for equality with the object’s `id` field.
+  """
+  id: Int
+
+  """
+  Checks for equality with the object’s `name` field.
+  """
+  name: String
+
+  """
+  Checks for equality with the object’s `vanNumber` field.
+  """
+  vanNumber: String
+}
+
+"""
+An input for mutations affecting `Partner`
+"""
+input PartnerInput {
+  id: Int
+  name: String
+  vanNumber: String
+}
+
+"""
+Represents an update to a `Partner`. Fields that are set will be updated.
+"""
+input PartnerPatch {
+  id: Int
+  name: String
+  vanNumber: String
+}
+
+"""
+A connection to a list of `Partner` values.
+"""
+type PartnersConnection {
+  """
+  A list of `Partner` objects.
+  """
+  nodes: [Partner]!
+
+  """
+  A list of edges which contains the `Partner` and cursor to aid in pagination.
+  """
+  edges: [PartnersEdge!]!
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `Partner` you could get from the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A `Partner` edge in the connection.
+"""
+type PartnersEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: Cursor
+
+  """
+  The `Partner` at the end of the edge.
+  """
+  node: Partner
+}
+
+"""
+Methods to use when ordering `Partner`.
+"""
+enum PartnersOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  NAME_ASC
+  NAME_DESC
+  VAN_NUMBER_ASC
+  VAN_NUMBER_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+type Pickup {
+  id: Int!
+  projectId: Int
+  driverId: Int
+  partnerId: Int
+  datePickedUp: Date
+  totalMeals: Float
+  totalKg: Float
+  fruitAndVegKg: Float
+  meatAndPoultryKg: Float
+  dairyItemsKg: Float
+  frozenFoodKg: Float
+  snacksAndBakedGoodsKg: Float
+  personalCareItemsKg: Float
+  pantryAndGroceryItemsKg: Float
+  freshPreparedMealsKg: Float
+  deliItemsKg: Float
+  drinksKg: Float
+
+  """
+  Reads a single `Project` that is related to this `Pickup`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Pickup`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Pickup`.
+  """
+  partnerByPartnerId: Partner
+}
+
+"""
+A condition to be used against `Pickup` object types. All fields are tested for equality and combined with a logical ‘and.’
+"""
+input PickupCondition {
+  """
+  Checks for equality with the object’s `id` field.
+  """
+  id: Int
+
+  """
+  Checks for equality with the object’s `projectId` field.
+  """
+  projectId: Int
+
+  """
+  Checks for equality with the object’s `driverId` field.
+  """
+  driverId: Int
+
+  """
+  Checks for equality with the object’s `partnerId` field.
+  """
+  partnerId: Int
+
+  """
+  Checks for equality with the object’s `datePickedUp` field.
+  """
+  datePickedUp: Date
+
+  """
+  Checks for equality with the object’s `totalMeals` field.
+  """
+  totalMeals: Float
+
+  """
+  Checks for equality with the object’s `totalKg` field.
+  """
+  totalKg: Float
+
+  """
+  Checks for equality with the object’s `fruitAndVegKg` field.
+  """
+  fruitAndVegKg: Float
+
+  """
+  Checks for equality with the object’s `meatAndPoultryKg` field.
+  """
+  meatAndPoultryKg: Float
+
+  """
+  Checks for equality with the object’s `dairyItemsKg` field.
+  """
+  dairyItemsKg: Float
+
+  """
+  Checks for equality with the object’s `frozenFoodKg` field.
+  """
+  frozenFoodKg: Float
+
+  """
+  Checks for equality with the object’s `snacksAndBakedGoodsKg` field.
+  """
+  snacksAndBakedGoodsKg: Float
+
+  """
+  Checks for equality with the object’s `personalCareItemsKg` field.
+  """
+  personalCareItemsKg: Float
+
+  """
+  Checks for equality with the object’s `pantryAndGroceryItemsKg` field.
+  """
+  pantryAndGroceryItemsKg: Float
+
+  """
+  Checks for equality with the object’s `freshPreparedMealsKg` field.
+  """
+  freshPreparedMealsKg: Float
+
+  """
+  Checks for equality with the object’s `deliItemsKg` field.
+  """
+  deliItemsKg: Float
+
+  """
+  Checks for equality with the object’s `drinksKg` field.
+  """
+  drinksKg: Float
+}
+
+"""
+An input for mutations affecting `Pickup`
+"""
+input PickupInput {
+  id: Int
+  projectId: Int
+  driverId: Int
+  partnerId: Int
+  datePickedUp: Date
+  totalMeals: Float
+  totalKg: Float
+  fruitAndVegKg: Float
+  meatAndPoultryKg: Float
+  dairyItemsKg: Float
+  frozenFoodKg: Float
+  snacksAndBakedGoodsKg: Float
+  personalCareItemsKg: Float
+  pantryAndGroceryItemsKg: Float
+  freshPreparedMealsKg: Float
+  deliItemsKg: Float
+  drinksKg: Float
+}
+
+"""
+Represents an update to a `Pickup`. Fields that are set will be updated.
+"""
+input PickupPatch {
+  id: Int
+  projectId: Int
+  driverId: Int
+  partnerId: Int
+  datePickedUp: Date
+  totalMeals: Float
+  totalKg: Float
+  fruitAndVegKg: Float
+  meatAndPoultryKg: Float
+  dairyItemsKg: Float
+  frozenFoodKg: Float
+  snacksAndBakedGoodsKg: Float
+  personalCareItemsKg: Float
+  pantryAndGroceryItemsKg: Float
+  freshPreparedMealsKg: Float
+  deliItemsKg: Float
+  drinksKg: Float
+}
+
+"""
+A connection to a list of `Pickup` values.
+"""
+type PickupsConnection {
+  """
+  A list of `Pickup` objects.
+  """
+  nodes: [Pickup]!
+
+  """
+  A list of edges which contains the `Pickup` and cursor to aid in pagination.
+  """
+  edges: [PickupsEdge!]!
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `Pickup` you could get from the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A `Pickup` edge in the connection.
+"""
+type PickupsEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: Cursor
+
+  """
+  The `Pickup` at the end of the edge.
+  """
+  node: Pickup
+}
+
+"""
+Methods to use when ordering `Pickup`.
+"""
+enum PickupsOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  PROJECT_ID_ASC
+  PROJECT_ID_DESC
+  DRIVER_ID_ASC
+  DRIVER_ID_DESC
+  PARTNER_ID_ASC
+  PARTNER_ID_DESC
+  DATE_PICKED_UP_ASC
+  DATE_PICKED_UP_DESC
+  TOTAL_MEALS_ASC
+  TOTAL_MEALS_DESC
+  TOTAL_KG_ASC
+  TOTAL_KG_DESC
+  FRUIT_AND_VEG_KG_ASC
+  FRUIT_AND_VEG_KG_DESC
+  MEAT_AND_POULTRY_KG_ASC
+  MEAT_AND_POULTRY_KG_DESC
+  DAIRY_ITEMS_KG_ASC
+  DAIRY_ITEMS_KG_DESC
+  FROZEN_FOOD_KG_ASC
+  FROZEN_FOOD_KG_DESC
+  SNACKS_AND_BAKED_GOODS_KG_ASC
+  SNACKS_AND_BAKED_GOODS_KG_DESC
+  PERSONAL_CARE_ITEMS_KG_ASC
+  PERSONAL_CARE_ITEMS_KG_DESC
+  PANTRY_AND_GROCERY_ITEMS_KG_ASC
+  PANTRY_AND_GROCERY_ITEMS_KG_DESC
+  FRESH_PREPARED_MEALS_KG_ASC
+  FRESH_PREPARED_MEALS_KG_DESC
+  DELI_ITEMS_KG_ASC
+  DELI_ITEMS_KG_DESC
+  DRINKS_KG_ASC
+  DRINKS_KG_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+type Project {
+  id: Int!
+  nature: String
+  primaryClientGroup: String
+  donorId: Int
+
+  """
+  Reads a single `FoodDonor` that is related to this `Project`.
+  """
+  foodDonorByDonorId: FoodDonor
+
+  """
+  Reads and enables pagination through a set of `Pickup`.
+  """
+  pickupsByProjectId(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Pickup`.
+    """
+    orderBy: [PickupsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PickupCondition
+  ): PickupsConnection!
+
+  """
+  Reads and enables pagination through a set of `Delivery`.
+  """
+  deliveriesByProjectId(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Delivery`.
+    """
+    orderBy: [DeliveriesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: DeliveryCondition
+  ): DeliveriesConnection!
+}
+
+"""
+A condition to be used against `Project` object types. All fields are tested for equality and combined with a logical ‘and.’
+"""
+input ProjectCondition {
+  """
+  Checks for equality with the object’s `id` field.
+  """
+  id: Int
+
+  """
+  Checks for equality with the object’s `nature` field.
+  """
+  nature: String
+
+  """
+  Checks for equality with the object’s `primaryClientGroup` field.
+  """
+  primaryClientGroup: String
+
+  """
+  Checks for equality with the object’s `donorId` field.
+  """
+  donorId: Int
+}
+
+"""
+An input for mutations affecting `Project`
+"""
+input ProjectInput {
+  id: Int
+  nature: String
+  primaryClientGroup: String
+  donorId: Int
+}
+
+"""
+Represents an update to a `Project`. Fields that are set will be updated.
+"""
+input ProjectPatch {
+  id: Int
+  nature: String
+  primaryClientGroup: String
+  donorId: Int
+}
+
+"""
+A connection to a list of `Project` values.
+"""
+type ProjectsConnection {
+  """
+  A list of `Project` objects.
+  """
+  nodes: [Project]!
+
+  """
+  A list of edges which contains the `Project` and cursor to aid in pagination.
+  """
+  edges: [ProjectsEdge!]!
+
+  """
+  Information to aid in pagination.
+  """
+  pageInfo: PageInfo!
+
+  """
+  The count of *all* `Project` you could get from the connection.
+  """
+  totalCount: Int!
+}
+
+"""
+A `Project` edge in the connection.
+"""
+type ProjectsEdge {
+  """
+  A cursor for use in pagination.
+  """
+  cursor: Cursor
+
+  """
+  The `Project` at the end of the edge.
+  """
+  node: Project
+}
+
+"""
+Methods to use when ordering `Project`.
+"""
+enum ProjectsOrderBy {
+  NATURAL
+  ID_ASC
+  ID_DESC
+  NATURE_ASC
+  NATURE_DESC
+  PRIMARY_CLIENT_GROUP_ASC
+  PRIMARY_CLIENT_GROUP_DESC
+  DONOR_ID_ASC
+  DONOR_ID_DESC
+  PRIMARY_KEY_ASC
+  PRIMARY_KEY_DESC
+}
+
+"""
+The root query type which gives access points into the data universe.
+"""
+type Query {
+  """
+  Exposes the root query type nested one level down. This is helpful for Relay 1
+  which can only query top level fields if they are in a particular form.
+  """
+  query: Query!
+
+  """
+  Reads and enables pagination through a set of `Delivery`.
+  """
+  allDeliveries(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Delivery`.
+    """
+    orderBy: [DeliveriesOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: DeliveryCondition
+  ): DeliveriesConnection
+
+  """
+  Reads and enables pagination through a set of `Driver`.
+  """
+  allDrivers(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Driver`.
+    """
+    orderBy: [DriversOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: DriverCondition
+  ): DriversConnection
+
+  """
+  Reads and enables pagination through a set of `FoodDonor`.
+  """
+  allFoodDonors(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `FoodDonor`.
+    """
+    orderBy: [FoodDonorsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: FoodDonorCondition
+  ): FoodDonorsConnection
+
+  """
+  Reads and enables pagination through a set of `Partner`.
+  """
+  allPartners(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Partner`.
+    """
+    orderBy: [PartnersOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PartnerCondition
+  ): PartnersConnection
+
+  """
+  Reads and enables pagination through a set of `Pickup`.
+  """
+  allPickups(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Pickup`.
+    """
+    orderBy: [PickupsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: PickupCondition
+  ): PickupsConnection
+
+  """
+  Reads and enables pagination through a set of `Project`.
+  """
+  allProjects(
+    """
+    Only read the first `n` values of the set.
+    """
+    first: Int
+
+    """
+    Only read the last `n` values of the set.
+    """
+    last: Int
+
+    """
+    Skip the first `n` values from our `after` cursor, an alternative to cursor
+    based pagination. May not be used with `last`.
+    """
+    offset: Int
+
+    """
+    Read all values in the set before (above) this cursor.
+    """
+    before: Cursor
+
+    """
+    Read all values in the set after (below) this cursor.
+    """
+    after: Cursor
+
+    """
+    The method to use when ordering `Project`.
+    """
+    orderBy: [ProjectsOrderBy!] = [PRIMARY_KEY_ASC]
+
+    """
+    A condition to be used in determining which values should be returned by the collection.
+    """
+    condition: ProjectCondition
+  ): ProjectsConnection
+  deliveryById(id: Int!): Delivery
+  driverById(id: Int!): Driver
+  foodDonorById(id: Int!): FoodDonor
+  partnerById(id: Int!): Partner
+  pickupById(id: Int!): Pickup
+  projectById(id: Int!): Project
+}
+
+"""
+All input for the `updateDeliveryById` mutation.
+"""
+input UpdateDeliveryByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Delivery` being updated.
+  """
+  deliveryPatch: DeliveryPatch!
+  id: Int!
+}
+
+"""
+The output of our update `Delivery` mutation.
+"""
+type UpdateDeliveryPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Delivery` that was updated by this mutation.
+  """
+  delivery: Delivery
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `Project` that is related to this `Delivery`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Delivery`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Delivery`.
+  """
+  partnerByPartnerId: Partner
+
+  """
+  An edge for our `Delivery`. May be used by Relay 1.
+  """
+  deliveryEdge(
+    """
+    The method to use when ordering `Delivery`.
+    """
+    orderBy: [DeliveriesOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DeliveriesEdge
+}
+
+"""
+All input for the `updateDriverById` mutation.
+"""
+input UpdateDriverByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Driver` being updated.
+  """
+  driverPatch: DriverPatch!
+  id: Int!
+}
+
+"""
+The output of our update `Driver` mutation.
+"""
+type UpdateDriverPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Driver` that was updated by this mutation.
+  """
+  driver: Driver
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `Driver`. May be used by Relay 1.
+  """
+  driverEdge(
+    """
+    The method to use when ordering `Driver`.
+    """
+    orderBy: [DriversOrderBy!] = [PRIMARY_KEY_ASC]
+  ): DriversEdge
+}
+
+"""
+All input for the `updateFoodDonorById` mutation.
+"""
+input UpdateFoodDonorByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `FoodDonor` being updated.
+  """
+  foodDonorPatch: FoodDonorPatch!
+  id: Int!
+}
+
+"""
+The output of our update `FoodDonor` mutation.
+"""
+type UpdateFoodDonorPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `FoodDonor` that was updated by this mutation.
+  """
+  foodDonor: FoodDonor
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `FoodDonor`. May be used by Relay 1.
+  """
+  foodDonorEdge(
+    """
+    The method to use when ordering `FoodDonor`.
+    """
+    orderBy: [FoodDonorsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): FoodDonorsEdge
+}
+
+"""
+All input for the `updatePartnerById` mutation.
+"""
+input UpdatePartnerByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Partner` being updated.
+  """
+  partnerPatch: PartnerPatch!
+  id: Int!
+}
+
+"""
+The output of our update `Partner` mutation.
+"""
+type UpdatePartnerPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Partner` that was updated by this mutation.
+  """
+  partner: Partner
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  An edge for our `Partner`. May be used by Relay 1.
+  """
+  partnerEdge(
+    """
+    The method to use when ordering `Partner`.
+    """
+    orderBy: [PartnersOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PartnersEdge
+}
+
+"""
+All input for the `updatePickupById` mutation.
+"""
+input UpdatePickupByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Pickup` being updated.
+  """
+  pickupPatch: PickupPatch!
+  id: Int!
+}
+
+"""
+The output of our update `Pickup` mutation.
+"""
+type UpdatePickupPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Pickup` that was updated by this mutation.
+  """
+  pickup: Pickup
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `Project` that is related to this `Pickup`.
+  """
+  projectByProjectId: Project
+
+  """
+  Reads a single `Driver` that is related to this `Pickup`.
+  """
+  driverByDriverId: Driver
+
+  """
+  Reads a single `Partner` that is related to this `Pickup`.
+  """
+  partnerByPartnerId: Partner
+
+  """
+  An edge for our `Pickup`. May be used by Relay 1.
+  """
+  pickupEdge(
+    """
+    The method to use when ordering `Pickup`.
+    """
+    orderBy: [PickupsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): PickupsEdge
+}
+
+"""
+All input for the `updateProjectById` mutation.
+"""
+input UpdateProjectByIdInput {
+  """
+  An arbitrary string value with no semantic meaning. Will be included in the
+  payload verbatim. May be used to track mutations by the client.
+  """
+  clientMutationId: String
+
+  """
+  An object where the defined keys will be set on the `Project` being updated.
+  """
+  projectPatch: ProjectPatch!
+  id: Int!
+}
+
+"""
+The output of our update `Project` mutation.
+"""
+type UpdateProjectPayload {
+  """
+  The exact same `clientMutationId` that was provided in the mutation input,
+  unchanged and unused. May be used by a client to track mutations.
+  """
+  clientMutationId: String
+
+  """
+  The `Project` that was updated by this mutation.
+  """
+  project: Project
+
+  """
+  Our root query field type. Allows us to run any query from our mutation payload.
+  """
+  query: Query
+
+  """
+  Reads a single `FoodDonor` that is related to this `Project`.
+  """
+  foodDonorByDonorId: FoodDonor
+
+  """
+  An edge for our `Project`. May be used by Relay 1.
+  """
+  projectEdge(
+    """
+    The method to use when ordering `Project`.
+    """
+    orderBy: [ProjectsOrderBy!] = [PRIMARY_KEY_ASC]
+  ): ProjectsEdge
+}
