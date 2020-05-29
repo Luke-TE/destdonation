@@ -18,11 +18,7 @@ testing backend:
 deploying to heroku:
   stage: production
   script:
-    - dpl --provider=heroku --app=shielded-savannah-74147 --api-key=$HEROKU_API_KEY
+    - dpl --provider=heroku --app=destdonation --api-key=$DESTDONATION_AUTH_TOKEN
   environment:
     name: Heroku
-    url: https://shielded-savannah-74147.herokuapp.com/
-
-  only:
-    - develop
-    - master
+    url: https://destdonation.herokuapp.com/
