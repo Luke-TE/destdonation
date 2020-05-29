@@ -71,9 +71,10 @@ export default function ButtonAppBar(props: any) {
   return (
     <div>
       <div className={classes.root}>
-        <AppBar position="static">
+      <AppBar style={{ background: "#FFFFFF" }} position="static">
           <Toolbar>
             <IconButton
+              style={{ color: "#658C47" }}
               edge="start"
               className={classes.menuButton}
               color="inherit"
@@ -83,11 +84,15 @@ export default function ButtonAppBar(props: any) {
               <MenuIcon />
             </IconButton>
 
-            <Typography variant="h6" className={classes.title}>
+            <Typography
+            variant="h6"
+            className={classes.title}
+            style={{ color: "#658C47" }}
+          >
               DestDonation
             </Typography>
 
-            <Button color="inherit">
+            <Button style={{ color: "#658C47" }}>
               <img src={icon} width={30} color="auto"></img>
             </Button>
           </Toolbar>
