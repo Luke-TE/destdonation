@@ -135,11 +135,14 @@ export default function ButtonAppBar(props: any) {
         >
           <div className="homeMenu">
             <MenuList className={classes.navMenu}>
-              <NavLink to="/" className="navItem">
+              <NavLink
+                to="/"
+                className="navItem"
+                style={{ textDecoration: "none" }}
+              >
                 <MenuItem>
                   <ListItemIcon style={{ color: "white" }}>
-                    {" "}
-                    <HomeIcon />{" "}
+                    <HomeIcon />
                   </ListItemIcon>
                   <ListItemText
                     classes={{ primary: classes.listItemText }}
@@ -148,11 +151,14 @@ export default function ButtonAppBar(props: any) {
                 </MenuItem>
               </NavLink>
 
-              <NavLink to="/Analytics" className="navItem">
+              <NavLink
+                to="/Analytics"
+                className="navItem"
+                style={{ textDecoration: "none" }}
+              >
                 <MenuItem>
                   <ListItemIcon style={{ color: "white" }}>
-                    {" "}
-                    <TimelineIcon />{" "}
+                    <TimelineIcon />
                   </ListItemIcon>
                   <ListItemText
                     classes={{ primary: classes.listItemText }}
@@ -161,11 +167,14 @@ export default function ButtonAppBar(props: any) {
                 </MenuItem>
               </NavLink>
 
-              <NavLink to="/Current-Donation" className="navItem">
+              <NavLink
+                to="/Current-Donation"
+                className="navItem"
+                style={{ textDecoration: "none" }}
+              >
                 <MenuItem>
                   <ListItemIcon style={{ color: "white" }}>
-                    {" "}
-                    <LocalShippingIcon />{" "}
+                    <LocalShippingIcon />
                   </ListItemIcon>
                   <ListItemText
                     classes={{ primary: classes.listItemText }}
