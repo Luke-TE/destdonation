@@ -1,11 +1,12 @@
 import React, { Component } from "react";
+import DailyUpdate from "../DailyUpdate/DailyUpdate";
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="page-content">
         <h1>Home</h1>
-        <p>Home page body content</p>
+        <DailyUpdate foodWeight={100} numOfMeals={200}></DailyUpdate>
       </div>
     );
   }
