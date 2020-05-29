@@ -9,7 +9,7 @@ class CurrentDonation extends Component {
     return (
       <div className="page-content">
         <h1>Current Donation</h1>
-        <DailyUpdate foodWeight={100} numOfMeals={200}></DailyUpdate>
+        <DailyUpdate />
         <Timeline />
       </div>
     );
