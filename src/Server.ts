@@ -64,7 +64,7 @@ const staticDir = path.join(__dirname, "public");
 app.use(express.static(staticDir));
 
 const mainPage = path.join(__dirname, "public", "index.html");
-app.get("/", (req: Request, res: Response) => {
+app.get("*", (req: Request, res: Response) => {
   res.sendFile(mainPage);
 });
 
