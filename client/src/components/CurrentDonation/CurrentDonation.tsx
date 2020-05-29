@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import Timeline from "./Timeline/Timeline";
+import "./CurrentDonation.css";
+import DailyUpdate from "../DailyUpdate/DailyUpdate";
 
 class CurrentDonation extends Component {
   render() {
     // @ts-ignore
     return (
-      <div>
-        <h1>CurrentDonation</h1>
-        <p>Current Donation body content</p>
+      <div className="page-content">
+        <h1>Current Donation</h1>
+        <DailyUpdate />
         <Timeline />
       </div>
     );

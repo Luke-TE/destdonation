@@ -1,0 +1,14 @@
+.main-footer {
+  color: #e1ffcb;
+  background: #658c47;
+  padding-top: 0em;
+  bottom: 0;
+  width: 100%;
+  position: relative;
+}
+
+.rows {
+  color: #e1ffcb;
+  align-items: center;
+  text-align: center;
+}
