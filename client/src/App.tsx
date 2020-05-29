@@ -5,8 +5,6 @@ import "./App.css";
 // @ts-ignore
 import Home from "./components/Home/Home.tsx";
 // @ts-ignore
-import Navigation from "./components/Navigation/Navigation.tsx";
-// @ts-ignore
 import Analytics from "./components/Analytics/Analytics.tsx";
 // @ts-ignore
 import CurrentDonation from "./components/CurrentDonation/CurrentDonation.tsx";
@@ -16,7 +14,6 @@ import Error from "./components/Error/Error.tsx";
 import Header from "./components/Navigation/Header.tsx";
 // @ts-ignore
 import Footer from "./components/Footer/Footer.tsx";
-
 
 import "typeface-roboto";
 
@@ -30,7 +27,6 @@ class App extends Component {
           <BrowserRouter>
             <div>
               <Header></Header>
-              <Navigation />
               <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/Current-Donation" component={CurrentDonation} />
