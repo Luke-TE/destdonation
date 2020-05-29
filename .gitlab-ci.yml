@@ -1,6 +1,5 @@
 stages:
   - test
-  - staging
   - production
 
 testing frontend:
@@ -16,20 +15,6 @@ testing backend:
     - npm ci
     - npm run test:CI
 
-deploying to VM:
-  stage: staging
-  before_script:
-    - pkill -9 screen || echo "Screen not running"
-  script:
-    - npm ci
-    - npm build
-    - screen -dm npm start
-  environment:
-    name: VM
-    url: $IP:$PORT
-  only:
-    - develop
-
 deploying to heroku:
   stage: production
   script:
@@ -37,5 +22,7 @@ deploying to heroku:
   environment:
     name: Heroku
     url: https://shielded-savannah-74147.herokuapp.com/
+
   only:
+    - develop
     - master
