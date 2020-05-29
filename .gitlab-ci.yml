@@ -22,3 +22,7 @@ deploying to heroku:
   environment:
     name: Heroku
     url: https://destdonation.herokuapp.com/
+
+  only:
+    - develop
+    - master
