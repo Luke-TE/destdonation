@@ -3,7 +3,10 @@ import { NavLink } from "react-router-dom";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
+import HomeIcon from "@material-ui/icons/Home";
+import TimelineIcon from "@material-ui/icons/Timeline";
+import LocalShippingIcon from "@material-ui/icons/LocalShipping";
+import MeetingRoomIcon from "@material-ui/icons/MeetingRoom";
 import {
   Avatar,
   AppBar,
@@ -56,6 +59,12 @@ export const useStyles = makeStyles((theme: Theme) =>
       marginRight: "auto",
       marginLeft: 0,
     },
+
+    listItemText: {
+      color: "white",
+      fontSize: "23px",
+      fontWeight: "bold",
+    },
   })
 );
 
@@ -73,7 +82,7 @@ export default function ButtonAppBar(props: any) {
   return (
     <div>
       <div className={classes.root}>
-      <AppBar style={{ background: "#FFFFFF" }} position="static">
+        <AppBar style={{ background: "#FFFFFF" }} position="static">
           <Toolbar>
             <IconButton
               style={{ color: "#658C47" }}
@@ -87,10 +96,10 @@ export default function ButtonAppBar(props: any) {
             </IconButton>
 
             <Typography
-            variant="h6"
-            className={classes.title}
-            style={{ color: "#658C47" }}
-          >
+              variant="h6"
+              className={classes.title}
+              style={{ color: "#658C47" }}
+            >
               DestDonation
             </Typography>
 
@@ -126,27 +135,42 @@ export default function ButtonAppBar(props: any) {
         >
           <div className="homeMenu">
             <MenuList className={classes.navMenu}>
-              <NavLink to="/">
+              <NavLink to="/" className="navItem">
                 <MenuItem>
-                  <ListItemText style={{ color: "white" }}>
-                    <p className="menuEntry">Home</p>
-                  </ListItemText>
+                  <ListItemIcon style={{ color: "white" }}>
+                    {" "}
+                    <HomeIcon />{" "}
+                  </ListItemIcon>
+                  <ListItemText
+                    classes={{ primary: classes.listItemText }}
+                    primary={"Home"}
+                  />
                 </MenuItem>
               </NavLink>
 
-              <NavLink to="/Analytics">
+              <NavLink to="/Analytics" className="navItem">
                 <MenuItem>
-                  <ListItemText style={{ color: "white" }}>
-                    <p className="menuEntry">Analytics</p>
-                  </ListItemText>
+                  <ListItemIcon style={{ color: "white" }}>
+                    {" "}
+                    <TimelineIcon />{" "}
+                  </ListItemIcon>
+                  <ListItemText
+                    classes={{ primary: classes.listItemText }}
+                    primary={"Analytics"}
+                  />
                 </MenuItem>
               </NavLink>
 
-              <NavLink to="/Current-Donation">
+              <NavLink to="/Current-Donation" className="navItem">
                 <MenuItem>
-                  <ListItemText style={{ color: "white" }}>
-                    <p className="menuEntry">Current Donation</p>
-                  </ListItemText>
+                  <ListItemIcon style={{ color: "white" }}>
+                    {" "}
+                    <LocalShippingIcon />{" "}
+                  </ListItemIcon>
+                  <ListItemText
+                    classes={{ primary: classes.listItemText }}
+                    primary={"Current Donation"}
+                  />
                 </MenuItem>
               </NavLink>
             </MenuList>
@@ -155,8 +179,13 @@ export default function ButtonAppBar(props: any) {
 
         <div className="logout">
           <MenuItem>
-            <ListItemIcon style={{color: 'white'}}><MeetingRoomIcon /></ListItemIcon>
-            <ListItemText primary={'Logout'} style={{color: 'white'}}></ListItemText>
+            <ListItemIcon style={{ color: "white" }}>
+              <MeetingRoomIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary={"Logout"}
+              style={{ color: "white" }}
+            ></ListItemText>
           </MenuItem>
         </div>
       </Drawer>
