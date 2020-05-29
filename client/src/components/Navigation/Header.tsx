@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { createStyles, makeStyles, Theme } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
+import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
 import {
   Avatar,
   AppBar,
@@ -14,6 +15,7 @@ import {
   ListItemText,
   Toolbar,
   Typography,
+  ListItemIcon,
 } from "@material-ui/core";
 
 import icon from "./greenIcon.png";
@@ -149,6 +151,13 @@ export default function ButtonAppBar(props: any) {
               </NavLink>
             </MenuList>
           </div>
+        </div>
+
+        <div className="logout">
+          <MenuItem>
+            <ListItemIcon style={{color: 'white'}}><MeetingRoomIcon /></ListItemIcon>
+            <ListItemText primary={'Logout'} style={{color: 'white'}}></ListItemText>
+          </MenuItem>
         </div>
       </Drawer>
     </div>
