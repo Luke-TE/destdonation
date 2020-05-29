@@ -4,6 +4,10 @@
   font-weight: bold;
 }
 
+.navItem {
+  text-decoration: none;
+}
+
 .navMenu {
 }
 
