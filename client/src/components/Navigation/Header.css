@@ -1,0 +1,25 @@
+.menuEntry {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navMenu {
+}
+
+.menu {
+}
+
+.menuButton2 {
+  size: 50px;
+}
+
+.companyAvatar {
+  width: 300;
+  height: 300;
+}
+
+.logout {
+  position: absolute;
+  bottom: 15px;
+}

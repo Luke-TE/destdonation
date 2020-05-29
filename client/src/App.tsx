@@ -3,19 +3,20 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 // @ts-ignore
-import Home from "../Home/Home.tsx";
+import Home from "./components/Home/Home.tsx";
 // @ts-ignore
-import Navigation from "../Navigation/Navigation.tsx";
+import Navigation from "./components/Navigation/Navigation.tsx";
 // @ts-ignore
-import Analytics from "../Analytics/Analytics.tsx";
+import Analytics from "./components/Analytics/Analytics.tsx";
 // @ts-ignore
-import CurrentDonation from "../CurrentDonation/CurrentDonation.tsx";
+import CurrentDonation from "./components/CurrentDonation/CurrentDonation.tsx";
 // @ts-ignore
-import Error from "../Error/Error.tsx";
+import Error from "./components/Error/Error.tsx";
 // @ts-ignore
-import Header from "../Navigation/Header.tsx";
+import Header from "./components/Navigation/Header.tsx";
 // @ts-ignore
-import Footer from "../Footer/Footer.tsx";
+import Footer from "./components/Footer/Footer.tsx";
+
 
 import "typeface-roboto";
 
