@@ -37,27 +37,28 @@ class DailyUpdate extends React.Component<DailyUpdateProps, DailyUpdateState> {
       }
     }
     `;
+    if (this.context.client) {
+      this.context.client
+        .request(query, {})
+        .then((data: any) => {
+          let foodWeight = 0.0;
+          let numOfMeals = 0.0;
 
-    this.context.client
-      .request(query, {})
-      .then((data: any) => {
-        let foodWeight = 0.0;
-        let numOfMeals = 0.0;
+          // todo: fix this so it filters to today's date
+          // todo: make this have proper types
+          // todo: use destructuring
+          let totalKg = 0.0;
+          let totalMeals = 0.0;
 
-        // todo: fix this so it filters to today's date
-        // todo: make this have proper types
-        // todo: use destructuring
-        let totalKg = 0.0;
-        let totalMeals = 0.0;
+          for (let edge of data.allDeliveries.edges) {
+            totalKg += edge.node.totalKg;
+            totalMeals += edge.node.totalMeals;
+          }
 
-        for (let edge of data.allDeliveries.edges) {
-          totalKg += edge.node.totalKg;
-          totalMeals += edge.node.totalMeals;
-        }
-
-        this.setState({ foodWeight: totalKg, numOfMeals: totalMeals });
-      })
-      .catch((error: any) => this.setState({ foodWeight: 0, numOfMeals: 0 }));
+          this.setState({ foodWeight: totalKg, numOfMeals: totalMeals });
+        })
+        .catch((error: any) => this.setState({ foodWeight: 0, numOfMeals: 0 }));
+    }
   }
 
   render() {
