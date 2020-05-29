@@ -220,7 +220,7 @@ initialize {
                 "namespace": "http://www.w3.org/1999/xhtml",
                 "next": Object {
                   "attribs": Object {
-                    "style": "left:190px;top:20px",
+                    "style": "left:170px;top:20px",
                   },
                   "children": Array [
                     Object {
@@ -301,7 +301,7 @@ initialize {
               },
               Object {
                 "attribs": Object {
-                  "style": "left:190px;top:20px",
+                  "style": "left:170px;top:20px",
                 },
                 "children": Array [
                   Object {
@@ -619,7 +619,7 @@ initialize {
               "namespace": "http://www.w3.org/1999/xhtml",
               "next": Object {
                 "attribs": Object {
-                  "style": "left:190px;top:20px",
+                  "style": "left:170px;top:20px",
                 },
                 "children": Array [
                   Object {
@@ -700,7 +700,7 @@ initialize {
             },
             Object {
               "attribs": Object {
-                "style": "left:190px;top:20px",
+                "style": "left:170px;top:20px",
               },
               "children": Array [
                 Object {
@@ -849,7 +849,7 @@ initialize {
             "namespace": "http://www.w3.org/1999/xhtml",
             "next": Object {
               "attribs": Object {
-                "style": "left:190px;top:20px",
+                "style": "left:170px;top:20px",
               },
               "children": Array [
                 Object {
@@ -930,7 +930,7 @@ initialize {
           },
           Object {
             "attribs": Object {
-              "style": "left:190px;top:20px",
+              "style": "left:170px;top:20px",
             },
             "children": Array [
               Object {

@@ -24,7 +24,7 @@ const DailyUpdate: React.FC<DailyUpdateProps> = (props) => {
         <b>{props.foodWeight}</b>kg of food have been donated.
       </VisualBox>
 
-      <VisualBox imageSrc={vanRev} leftOffset={190} topOffset={20}>
+      <VisualBox imageSrc={vanRev} leftOffset={170} topOffset={20}>
         <b>{props.numOfMeals}</b>meals have been donated.
       </VisualBox>
     </Box>
