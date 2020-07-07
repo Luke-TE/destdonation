@@ -2,9 +2,11 @@
 
 An interactive website for displaying the donations made to charities via CityHarvest. 
 
-Produced initially for the Imperial College London Computing Department Designing-for-Real-People scheme.
-
 Deployed on [Heroku](https://destdonation.herokuapp.com/). Currently populated with test data. 
+
+Produced initially as a student project for the Imperial College London Computing Department Designing-for-Real-People scheme.
+
+
 
 ### Built With
 
