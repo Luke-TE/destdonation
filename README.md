@@ -1,6 +1,6 @@
-# DestDonation
+# DestDonation 🚐
 
-An interactive website for displaying the food donations made to charities via CityHarvest. 
+An interactive website for displaying the food and meal donations 🍽️ made to charities via CityHarvest ❤️. 
 
 Deployed on [Heroku](https://destdonation.herokuapp.com/). Currently populated with test data. 
 
