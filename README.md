@@ -12,12 +12,12 @@ Add additional notes about how to deploy this on a live system
 
 ### Built With
 
-* [TypeScript]() - 
-* [React]() - 
-* [Express]() - 
-* [PostgreSQL]() - 
-* [PostGraphile]() - 
-* [DevExpress]() - 
+* [TypeScript](https://www.typescriptlang.org/) - Main full-stack language. 
+* [React](https://reactjs.org/) - Main frontend framework.
+* [Express](https://expressjs.com/) - Main backend framework.
+* [PostgreSQL](https://www.postgresql.org/) - Database software.
+* [PostGraphile](https://www.graphile.org/postgraphile/) - For creating GraphQL API.
+* [DevExpress](https://www.devexpress.com/) - Graphing package.
 
 
 ### Authors
