@@ -1,8 +1,10 @@
 # DestDonation
 
-An interactive website for displaying the donations made to charities via CityHarvest.
+An interactive website for displaying the donations made to charities via CityHarvest. 
 
-Deployed on [Heroku](https://destdonation.herokuapp.com/).
+Produced initially for the Imperial College London Computing Department Designing-for-Real-People scheme.
+
+Deployed on [Heroku](https://destdonation.herokuapp.com/). Currently populated with test data. 
 
 ### Built With
 
