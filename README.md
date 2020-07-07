@@ -1,7 +1,8 @@
 # DestDonation
 
 An interactive website for displaying the donations made to charities via CityHarvest.
-Depoyed on [Heroku](https://destdonation.herokuapp.com/).
+
+Deployed on [Heroku](https://destdonation.herokuapp.com/).
 
 ### Built With
 
