@@ -22,10 +22,10 @@ Add additional notes about how to deploy this on a live system
 
 ### Authors
 
-* **Adelina Filip** - *Initial work* - [Luke-TE](https://github.com/Adeline)
-* **Meera Nakrani** - *Initial work* - [AdelinaFilip](https://github.com/AdelinaFilip)
+* **Adelina Filip** - *Initial work* - [AdelinaFilip](https://github.com/AdelinaFilip)
+* **Meera Nakrani** - *Initial work* - [MeeraN7](https://github.com/MeeraN7)
 * **Kriti Sapra** - *Initial work* - [kriti-sapra](https://github.com/kriti-sapra)
-* **Luke Texon** - *Initial work* - [MeeraN7](https://github.com/MeeraN7)
+* **Luke Texon** - *Initial work* - [Luke-TE](https://github.com/Luke-TE)
 
 ### License
 
